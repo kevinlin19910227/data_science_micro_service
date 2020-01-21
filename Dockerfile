@@ -15,4 +15,5 @@ RUN mkdir logs
 # download the model from cloud
 RUN mkdir state_dict
 #RUN sh ./pull_model.sh
+RUN chmod 777 ./run.sh
 RUN ./run.sh
