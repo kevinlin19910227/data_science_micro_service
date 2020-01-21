@@ -16,4 +16,4 @@ RUN mkdir logs
 RUN mkdir state_dict
 #RUN sh ./pull_model.sh
 RUN chmod 777 ./run.sh
-CMD run.sh
+CMD ["./run.sh"]
