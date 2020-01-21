@@ -4,7 +4,7 @@ RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+#RUN pip install --no-cache-dir -r requirements.txt
 
 # the container will listen on 5000
 EXPOSE 5000
