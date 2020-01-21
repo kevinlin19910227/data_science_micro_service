@@ -146,5 +146,6 @@ if __name__ == '__main__':
     logger.info("Please wait until server has fully started")
 
     model = TextInModel(opt)
-    app.run(host = '0.0.0.0')
+    PORT = int(os.environ.get("PORT", 8080))
+    app.run(host = '0.0.0.0', port=PORT)
 
