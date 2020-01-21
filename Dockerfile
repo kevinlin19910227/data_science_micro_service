@@ -15,4 +15,4 @@ RUN mkdir logs
 # download the model from cloud
 RUN mkdir state_dict
 RUN sh ./pull_model.sh
-CMD ["sh", "run.sh"]
+CMD ["./run.sh"]
