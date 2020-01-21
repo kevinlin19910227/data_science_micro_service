@@ -4,7 +4,7 @@ RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
 
-#RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # the container will listen on 5000
 EXPOSE 5000
@@ -14,6 +14,6 @@ RUN mkdir logs
 
 # download the model from cloud
 RUN mkdir state_dict
-#RUN sh ./pull_model.sh
-#RUN chmod 777 ./run.sh
-#CMD ["python"]
+RUN sh ./pull_model.sh
+RUN chmod 777 ./run.sh
+CMD ["sh" "./run.sh"]
